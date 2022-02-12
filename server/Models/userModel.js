@@ -48,6 +48,18 @@ const UserSchema=new mongoose.Schema(
            {
                type:Boolean,
                default:false
+           },
+           desc:{
+               type:String,
+               max:100
+           },
+           city:{
+               type:String,
+               max:50
+           }
+           ,relationship:{
+               type:Number,
+               
            }
 
 
