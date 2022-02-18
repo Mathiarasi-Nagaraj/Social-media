@@ -1,0 +1,28 @@
+
+  .leftbarfriendlist
+  {
+    padding: 0;
+    margin: 10px;
+  }
+  .leftbarfriendlistitems {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    
+  }
+  
+  
+  .leftbarfriendimg
+  {
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    
+      float: left;
+  }
+  .leftbarfriendname
+  {
+      padding: 15px;
+  }

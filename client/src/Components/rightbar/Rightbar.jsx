@@ -1,5 +1,7 @@
 import React from 'react'
 import './rightbar.css'
+import {Users} from '../../dummyData'
+import Online from '../online/Online'
 export default function Rightbar() {
   return (
     <div className='rightbar'>
@@ -15,38 +17,11 @@ export default function Rightbar() {
         <img alt="ad" src="/assets/ad.png" className='rightbarad'></img>
         
           <h4 className="onlinefriend">Online friend</h4>
-          <ul className="onlinefriendlist">
-            <li className="onlinefriendlistitem">
-              <img src="/assets/person/4.jpeg" alt="onlinefriend" className='onlinefriendimg'></img>
-              <span className="online"></span>
-              <span className='onlinefriendname'>Monisha</span>
-            </li>
-            <li className="onlinefriendlistitem">
-              <img src="/assets/person/4.jpeg" alt="onlinefriend" className='onlinefriendimg'></img>
-              <span className="online"></span>
-              <span className='onlinefriendname'>Monisha</span>
-            </li> <li className="onlinefriendlistitem">
-              <img src="/assets/person/4.jpeg" alt="onlinefriend" className='onlinefriendimg'></img>
-              <span className="online"></span>
-              <span className='onlinefriendname'>Monisha</span>
-            </li> <li className="onlinefriendlistitem">
-              <img src="/assets/person/4.jpeg" alt="onlinefriend" className='onlinefriendimg'></img>
-              <span className="online"></span>
-              <span className='onlinefriendname'>Monisha</span>
-            </li> <li className="onlinefriendlistitem">
-              <img src="/assets/person/4.jpeg" alt="onlinefriend" className='onlinefriendimg'></img>
-              <span className="online"></span>
-              <span className='onlinefriendname'>Monisha</span>
-            </li> <li className="onlinefriendlistitem">
-              <img src="/assets/person/4.jpeg" alt="onlinefriend" className='onlinefriendimg'></img>
-              <span className="online"></span>
-              <span className='onlinefriendname'>Monisha</span>
-            </li> <li className="onlinefriendlistitem">
-              <img src="/assets/person/4.jpeg" alt="onlinefriend" className='onlinefriendimg'></img>
-              <span className="online"></span>
-              <span className='onlinefriendname'>Monisha</span>
-            </li>
-          </ul>
+        {
+          Users.map(u=>(
+            <Online key={u.id} user={u}></Online>
+          ))
+        }
 
 
        

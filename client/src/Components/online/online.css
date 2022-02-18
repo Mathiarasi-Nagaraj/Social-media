@@ -1,0 +1,35 @@
+.onlinefriendimg
+{
+width: 40px;
+height: 40px;
+object-fit: cover;
+border-radius: 50%;
+margin-right: 20px;
+
+}
+.online{
+width: 12px;
+height: 12px;
+position: absolute;
+background-color: mediumseagreen;
+border: 2px solid white;
+border-radius: 50%;
+top:-2px;
+left: 30px;
+
+}
+.onlinefriendlistitem
+{
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    position: relative;
+}
+.onlinefriendlist
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+   
+}
