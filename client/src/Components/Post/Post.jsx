@@ -11,7 +11,7 @@ export default function Post() {
                     <span className='posttime'>5 mins ago</span>
                 </div>
                 <div className="post-left-right">
-                <i class="fa-light fa-ellipsis-vertical"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
                 </div>
             </div>
             <div className="postcenter">

@@ -2,3 +2,69 @@
 {
     flex:3.5
 }
+.rightbarwrapper
+{
+    margin:20px 20px 0 0;
+}
+.birthdaycontainer
+{
+    display: flex;
+    align-items: center;
+}
+.birthdayImg
+{
+width: 32px;
+height: 32px;
+margin-right: 20px;
+}
+.birthdaytext
+{
+    font-size: 14px;
+    font-weight: 500;
+}
+.rightbarad
+{
+    margin: 20px;
+    height: 300px;
+    width: 400px;
+}
+.onlinefriend
+{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.onlinefriendimg
+{
+width: 40px;
+height: 40px;
+object-fit: cover;
+border-radius: 50%;
+margin-right: 20px;
+
+}
+.online{
+width: 12px;
+height: 12px;
+position: absolute;
+background-color: mediumseagreen;
+border: 2px solid white;
+border-radius: 50%;
+top:-2px;
+left: 30px;
+
+}
+.onlinefriendlistitem
+{
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    position: relative;
+}
+.onlinefriendlist
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+   
+}
