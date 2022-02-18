@@ -1,0 +1,91 @@
+.post
+{
+    width: 100%;
+    border:10px;
+    border-radius: 5px;
+    box-shadow: -1px 0px 24px -6px rgba(128,118,118,0.91);
+    -webkit-box-shadow: -1px 0px 24px -6px rgba(128,118,118,0.91);
+    -moz-box-shadow: -1px 0px 24px -6px rgba(128,118,118,0.91);
+    margin: 30px 0px;
+}
+.postwrapper
+{
+    padding: 10px;
+}
+.postleft
+{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.postleft-left
+{
+    display: flex;
+    align-items: center;
+}
+.postprofile
+{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: -1px 0px 24px -6px rgba(128,118,118,0.91);
+    -webkit-box-shadow: -1px 0px 24px -6px rgba(128,118,118,0.91);
+    -moz-box-shadow: -1px 0px 24px -6px rgba(128,118,118,0.91);
+}
+.postusername
+{
+    font-size: 17px;
+    margin: 0 10px;
+    font-weight: 400;
+}
+.posttime
+{
+    color: grey;
+    font-style: italic;
+    font-size: 12px;
+}
+.posttext
+{
+    font-size: 18px;
+}
+.postcenter
+{
+    margin: 20px 0px;
+
+}
+.postimg
+{
+    margin-top: 20px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+
+}
+.postright
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.postright-left
+{
+    display: flex;
+    align-items: center;
+}
+.postlike
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.postliketext
+{
+    font-size: 14px;
+}
+.comments
+{
+    font-size: 15px;
+    border-bottom: 1px dotted grey;
+}
