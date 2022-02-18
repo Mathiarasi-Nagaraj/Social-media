@@ -1,4 +1,4 @@
-.Register
+.Login
 {
     display: flex;
     width: 100vw;
@@ -35,7 +35,7 @@
 }
 .loginbox
 {
-    height: 500px;
+    height: 300px;
     padding: 20px;
     background-color: #fff;
     display: flex;
