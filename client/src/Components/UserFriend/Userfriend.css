@@ -1,0 +1,32 @@
+.rightbarinfokey
+{
+    color: gray;
+}
+.rightbarFollowings
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.rightbarfollowingimg
+{
+
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.rightbarfollowing
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.rightbartitle
+{
+    font-size: 18px;
+    margin: 20px 0;
+}
+.rightbarinfoitem
+{padding: 5px;}

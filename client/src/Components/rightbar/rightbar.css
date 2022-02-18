@@ -33,3 +33,24 @@ margin-right: 20px;
     margin-bottom: 20px;
     font-size: 18px;
 }
+.rightbarinfokey
+{
+    color: gray;
+}
+
+.rightbarfollowingimg
+{
+
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.rightbartitle
+{
+    font-size: 18px;
+    margin: 20px 0;
+}
+.rightbarinfoitem
+{padding: 5px;}
