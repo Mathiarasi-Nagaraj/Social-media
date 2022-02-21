@@ -5,6 +5,7 @@ import Topbar from '../../Components/topbar/Topbar'
 import Rightbar from '../../Components/rightbar/Rightbar'
 import './Profile.css';
 export default function Profile() {
+    const PF=process.env.REACT_APP_PUBLIC_FOLDER;
     return (
         <>
             <Topbar></Topbar>
@@ -15,8 +16,8 @@ export default function Profile() {
                     <div className="profileright">
                         <div className="profilerighttop">
                             <div className="profilecover">
-                            <img src="/assets/post/3.jpeg" className='profilecoverimg'></img>
-                            <img src="/assets/person/3.jpeg" className='profileuserimg'></img></div>
+                            <img src={`${PF}post/3.jpeg`} className='profilecoverimg'></img>
+                            <img src={`${PF}person/3.jpeg`}  className='profileuserimg'></img></div>
                             <div className="profileinfo">
                                 <h4 className='profileinfoname'>Mathiarasi</h4>
                                 <span className='profileinfodesc'>Hey all,just share some positivity</span>

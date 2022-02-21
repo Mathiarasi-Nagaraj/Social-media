@@ -1,10 +1,14 @@
 import React from 'react'
 import './topbar.css'
+import {Link} from 'react-router-dom'
 export default function Topbar() {
+  const PF=process.env.REACT_APP_PUBLIC_FOLDER;
   return (
     <div className="topbar">
       <div className="topbar-left">
-        <span className='topbarlogo'>SnapTalks</span>
+        <Link to="/" style={{textDecoration: "none"}}>
+        <span className='topbarlogo' >SnapTalks</span>
+        </Link>
       </div>
       <div className="topbar-center">
         <div className='searchbar'>
@@ -32,7 +36,7 @@ export default function Topbar() {
             <span className='topbarIconbadges'>3</span>
           </div>
         </div>
-        <img src="/assets/person/1.jpeg" className='topbarImg'></img>
+        <img src={`${PF}person/1.jpeg`} className='topbarImg' alt="person"></img>
       </div>
     </div>
   )

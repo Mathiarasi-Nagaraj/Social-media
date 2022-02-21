@@ -4,6 +4,7 @@ import {Users} from '../../dummyData'
 export default function Post({post}) {
 const[like,setLike]=useState(post.like);
 const[isliked,setisliked]=useState(false);
+const PF=process.env.REACT_APP_PUBLIC_FOLDER;
 const handellike=()=>
 {
     setLike(isliked?like-1:like+1)
@@ -24,8 +25,10 @@ const handellike=()=>
             </div>
             <div className="postcenter">
                 <span className='posttext'>{post?.desc}</span>
-                <img src={post.photo} alt="post" className='postimg'></img>
+                <img src={PF+post.photo} alt="post" className='postimg'></img>
+   
             </div>
+         {  console.log( PF+post.photo)}
             <div className="postright">
                 <div className="postright-left">
             <img src="/assets/like.png" alt="post" className='postlike' onClick={handellike}></img>
