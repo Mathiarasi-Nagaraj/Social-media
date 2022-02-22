@@ -6,8 +6,11 @@ const PostSchema=new mongoose.Schema(
              type:String,
              require:true,
              min:5,
-             max:20,
-             unique:true
+            
+           },
+           userId:
+           {
+               type:String,
            },
           img: {
                  type:String,

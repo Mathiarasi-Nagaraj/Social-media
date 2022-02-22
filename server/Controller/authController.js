@@ -6,7 +6,7 @@ const register=async (req,res,next)=>
 try{
     //to generate hashed password
     const saltRounds = 10;
-    const hashedPassword = bcrypt.hashSync(req.body.password, saltRounds);
+    const hashedPassword =await  bcrypt.hashSync(req.body.password, saltRounds);
     const newUser=new userModel({
         username:req.body.username,
         email:req.body.email,
@@ -25,7 +25,10 @@ const login=async (req,res,next)=>
 try{
     const user=await userModel.findOne({email:req.body.email});
     !user&&res.status(404).json("User not found")
-    const validPassword= bcrypt.compare(req.body.password,user.password);
+
+    const saltRounds = 10;
+   
+    const validPassword=await  bcrypt.compare(req.body.password,user.password);
     !validPassword&&res.status(404).json("wrong password")
    res.status(200).json(user);
 }

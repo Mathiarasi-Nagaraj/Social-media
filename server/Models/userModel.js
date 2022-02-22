@@ -51,14 +51,22 @@ const UserSchema=new mongoose.Schema(
            },
            desc:{
                type:String,
-               max:100
+               max:100,
+               default:"hey all"
            },
            city:{
                type:String,
-               max:50
-           }
+               max:50,
+               default:"Chennai"
+           },
+           from:{
+            type:String,
+            max:50,
+            default:"Chennai"
+        }
            ,relationship:{
-               type:Number,
+               type:String,
+               default:"single"
                
            }
 

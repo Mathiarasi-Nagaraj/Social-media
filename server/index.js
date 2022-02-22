@@ -20,8 +20,10 @@ app.use(helmet())
 app.use(morgan('dev'))
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json())
-const userRoutes=require('./Routes/userRoute')
-app.use('/api/user',userRoutes);
+const userRoutes=require('./Routes/userRoute');
+const postRoutes=require('./Routes/postRoutes');
+app.use('/api/user',userRoutes)
+app.use('/api/post',postRoutes);
 const PORT = 8000 || env.PORT;
 app.listen(PORT, () => {
     console.log(`Server is running in port ${PORT}`);

@@ -3,7 +3,7 @@ import './rightbar.css'
 import {Users} from '../../dummyData'
 import Online from '../online/Online'
 import UserFriend from '../UserFriend/UserFriend'
-export default function Rightbar({profile}) {
+export default function Rightbar({user}) {
   const HomeRightbar=()=>
   {
        return( 
@@ -40,15 +40,15 @@ export default function Rightbar({profile}) {
         <div className="rightbarinfo">
           <div className="rightbarinfoitem">
             <span className="rightbarinfokey">City :</span>
-            <span className="rightbarinfovalue">Tirupur</span>
+            <span className="rightbarinfovalue">{user.city}</span>
           </div>
           <div className="rightbarinfoitem">
             <span className="rightbarinfokey">From :</span>
-            <span className="rightbarinfovalue">Tirupur</span>
+            <span className="rightbarinfovalue">{user.from}</span>
           </div>
           <div className="rightbarinfoitem">
             <span className="rightbarinfokey">Relationship :</span>
-            <span className="rightbarinfovalue">Single</span>
+            <span className="rightbarinfovalue">{user.relationship}</span>
           </div>
           <div className="rightbarinfoitem">
             <div className="rightbarinfokey"></div>
@@ -71,7 +71,7 @@ export default function Rightbar({profile}) {
   return (
     <div className='rightbar'>
       <div className="rightbarwrapper">
-      {profile?<Profilerightbar></Profilerightbar>:<HomeRightbar></HomeRightbar>}
+      {user ?<Profilerightbar></Profilerightbar>:<HomeRightbar></HomeRightbar>}
       </div>
     </div>
   )
